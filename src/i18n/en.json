@@ -8,87 +8,87 @@
     "cta": "Get In Touch"
   },
   "hero": {
-    "badge": "CRAFT & DESIGN",
-    "line1": "CUSTOM WOOD",
-    "line2": "FURNITURE",
-    "sub": "Handcrafted pieces built to last a lifetime.",
+    "badge": "CUSTOM CARPENTRY",
+    "line1": "MOSKO",
+    "line2": "WOOD",
+    "sub": "We are Dor & Gal — two carpenters from Beer Sheva building custom wood furniture with love, precision, and honesty.",
     "cta": "View Our Work",
     "ctaSecondary": "Get In Touch",
     "scrollHint": "SCROLL",
-    "trust": "Trusted by 100+ satisfied clients",
+    "trust": "Happy clients across the region",
     "rating": "5.0"
   },
   "stats": [
-    { "value": "12+", "label": "Years Experience" },
-    { "value": "250+", "label": "Projects Completed" },
-    { "value": "100+", "label": "Happy Clients" },
-    { "value": "5.0★", "label": "Average Rating" }
+    { "value": "2", "label": "Expert Craftsmen" },
+    { "value": "50+", "label": "Projects Completed" },
+    { "value": "100%", "label": "Handcrafted" },
+    { "value": "5.0★", "label": "Client Rating" }
   ],
   "services": {
-    "badge": "WHAT WE DO",
-    "title": "EXPERT CRAFTSMANSHIP IN EVERY PROJECT",
-    "sub": "From custom furniture to full interior woodwork — we bring your vision to life.",
+    "badge": "WHAT WE BUILD",
+    "title": "CUSTOM WOOD FURNITURE",
+    "sub": "From home furniture to special projects — every piece is made entirely by us, from measuring to installation.",
     "items": [
       {
-        "title": "Custom Furniture",
-        "desc": "Unique handcrafted pieces designed around your space and personal style."
+        "title": "Home Furniture",
+        "desc": "Wardrobes, shelves, tables and any wood piece — built specifically for your space."
       },
       {
-        "title": "Kitchen Cabinets",
-        "desc": "Premium cabinetry built for beauty, durability, and everyday functionality."
+        "title": "Special Projects",
+        "desc": "Chess tables with turned legs, wood-iron combos, craftsman work — anything that requires creativity and skill."
       },
       {
-        "title": "Wardrobes & Closets",
-        "desc": "Custom fitted wardrobes and elegant sliding door systems."
+        "title": "Montessori Furniture",
+        "desc": "Child-height furniture, chairs, towers and shelves in the Montessori approach — from natural woods."
       },
       {
-        "title": "Wood Flooring",
-        "desc": "Natural wood flooring installation, sanding, and finishing."
+        "title": "Wood & Iron",
+        "desc": "Dor is also a welder — we combine wood with iron for unique effects you won't find anywhere else."
       }
     ]
   },
   "portfolio": {
     "badge": "OUR WORK",
     "title": "PROJECTS WE'RE PROUD OF",
-    "sub": "A selection of recent work. Every piece tells a story.",
-    "viewAll": "View All Projects",
+    "sub": "Every piece tells a story. Every project is built by hand.",
+    "viewAll": "Contact Us For More Projects",
     "items": [
-      { "title": "Living Room Suite", "category": "Custom Furniture" },
-      { "title": "Modern Kitchen", "category": "Kitchen Cabinets" },
-      { "title": "Master Wardrobe", "category": "Wardrobes" },
-      { "title": "Dining Table", "category": "Custom Furniture" },
-      { "title": "Oak Flooring", "category": "Wood Flooring" },
-      { "title": "Home Office", "category": "Custom Furniture" }
+      { "title": "Chess Table", "category": "Special Project" },
+      { "title": "Our Workshop", "category": "Old City, Beer Sheva" },
+      { "title": "Custom Wardrobe", "category": "Home Furniture" },
+      { "title": "Work Desk", "category": "Custom Furniture" },
+      { "title": "Montessori Furniture", "category": "Children's Furniture" },
+      { "title": "Wood & Iron Combo", "category": "Special Project" }
     ]
   },
   "about": {
-    "badge": "OUR STORY",
-    "title": "CRAFTSMANSHIP YOU CAN TRUST",
-    "body1": "Mosko Wood was founded with one belief: quality woodwork should be accessible to every home. With over a decade of hands-on experience, we combine traditional joinery techniques with modern design sensibilities.",
-    "body2": "Every piece we create is built to last — and to tell a story. From the first sketch to the final finish, we're with you every step of the way.",
+    "badge": "A BIT ABOUT US",
+    "title": "DOR & GAL — CARPENTERS FROM BEER SHEVA",
+    "body1": "Good friends, Beer Sheva locals, people of people, of work and wood. Dor worked in informal education and did carpentry in a 2-meter room — during the war he decided to open the workshop in the Old City.",
+    "body2": "Gal joined after about 400 days of reserve service in Operation Iron Swords. Our workshop is at HaAtzma'ut 10, Old City of Beer Sheva. We don't compromise on quality — everything is done by us personally, including installation.",
     "cta": "See Our Portfolio",
-    "yearsLabel": "Years of craft"
+    "yearsLabel": "Days of Reserve Service"
   },
   "testimonials": {
     "badge": "CLIENT REVIEWS",
     "title": "WHAT OUR CLIENTS SAY",
     "items": [
       {
-        "name": "Yael Cohen",
-        "location": "Tel Aviv",
-        "text": "The kitchen cabinets Mosko Wood built for us are absolutely stunning. Perfect craftsmanship, delivered on time and within budget.",
+        "name": "Yael K.",
+        "location": "Beer Sheva",
+        "text": "I ordered a custom wardrobe and Dor & Gal did a perfect job. They came to measure, explained the whole process, and the result is amazing. Highly recommend!",
         "rating": 5
       },
       {
-        "name": "Avi Levi",
-        "location": "Ramat Gan",
-        "text": "I commissioned a custom dining table and it became the centerpiece of our home. The quality is incredible — highly recommended.",
+        "name": "Michael L.",
+        "location": "Rahat",
+        "text": "I was looking for a special wood-iron table and couldn't find one until I met Moskowood. Precise work, fast turnaround and fair pricing.",
         "rating": 5
       },
       {
-        "name": "Dana Shapiro",
-        "location": "Herzliya",
-        "text": "Professional from start to finish. The wardrobe they designed fits perfectly and the attention to detail is exceptional.",
+        "name": "Sara B.",
+        "location": "Omer",
+        "text": "I ordered Montessori furniture for my daughter's room. They came to measure, offered great ideas, and the result exceeded all expectations!",
         "rating": 5
       }
     ]
@@ -96,22 +96,22 @@
   "contact": {
     "badge": "GET IN TOUCH",
     "title": "LET'S BUILD SOMETHING TOGETHER",
-    "sub": "Have a project in mind? Tell us about it and we'll get back to you within 24 hours.",
+    "sub": "Looking for honest, available carpenters? Have a project in mind? Tell us about it and we'll get back to you soon.",
     "name": "Your Name",
     "phone": "Phone Number",
     "email": "Email Address",
     "message": "Tell us about your project...",
-    "send": "Send Message",
+    "send": "Send via WhatsApp",
     "sending": "Sending...",
-    "sent": "Message Sent! We'll be in touch soon.",
-    "whatsapp": "Chat on WhatsApp",
+    "sent": "Message sent! We'll be in touch soon.",
+    "whatsapp": "WhatsApp with Dor",
     "callUs": "Call Us",
     "emailUs": "Email Us",
-    "area": "Serving the Greater Tel Aviv Area",
+    "area": "HaAtzma'ut 10, Old City, Beer Sheva",
     "required": "Required fields marked *"
   },
   "footer": {
-    "tagline": "Quality woodwork for every home.",
+    "tagline": "Custom carpentry from Beer Sheva.",
     "linksTitle": "Quick Links",
     "contactTitle": "Contact",
     "rights": "All rights reserved.",

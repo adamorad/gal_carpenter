@@ -3,9 +3,8 @@ import type { FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
 
-// TODO: Update these with Gal's actual contact details
-const PHONE = '972501234567'
-const EMAIL = 'info@moskowood.co.il'
+const PHONE_DOR = '972546214485'
+const EMAIL = 'MOSKOWOOD1@GMAIL.COM'
 
 export default function Contact() {
   const { t } = useTranslation()
@@ -23,7 +22,7 @@ export default function Contact() {
     const text = encodeURIComponent(
       `Hi, I'm ${form.name}!\n\nPhone: ${form.phone}\nEmail: ${form.email}\n\n${form.message}`
     )
-    const waUrl = `https://api.whatsapp.com/send?phone=${PHONE}&text=${text}`
+    const waUrl = `https://api.whatsapp.com/send?phone=${PHONE_DOR}&text=${text}`
 
     setTimeout(() => {
       setStatus('sent')
@@ -124,7 +123,7 @@ export default function Contact() {
           {/* Right: contact info */}
           <div className="flex flex-col gap-8 md:pt-20">
             <a
-              href={`https://api.whatsapp.com/send?phone=${PHONE}`}
+              href={`https://api.whatsapp.com/send?phone=${PHONE_DOR}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-start gap-4 group"
@@ -140,19 +139,22 @@ export default function Contact() {
               </div>
             </a>
 
-            <a href={`tel:+${PHONE}`} className="flex items-start gap-4 group">
-              <div className="bg-charcoal p-3 shrink-0 group-hover:bg-rust transition-colors duration-200">
+            <div className="flex items-start gap-4">
+              <div className="bg-charcoal p-3 shrink-0">
                 <Phone size={20} className="text-white" />
               </div>
               <div>
                 <p className="text-xs text-charcoal/50 uppercase tracking-wider mb-1">
                   {t('contact.callUs')}
                 </p>
-                <p className="font-semibold text-charcoal group-hover:text-rust transition-colors duration-200">
-                  +{PHONE}
-                </p>
+                <a href="tel:+972546214485" className="block font-semibold text-charcoal hover:text-rust transition-colors duration-200">
+                  דור: 054-621-4485
+                </a>
+                <a href="tel:+972536668863" className="block font-semibold text-charcoal hover:text-rust transition-colors duration-200">
+                  גל: 053-666-8863
+                </a>
               </div>
-            </a>
+            </div>
 
             <a href={`mailto:${EMAIL}`} className="flex items-start gap-4 group">
               <div className="bg-charcoal p-3 shrink-0 group-hover:bg-rust transition-colors duration-200">
@@ -162,7 +164,7 @@ export default function Contact() {
                 <p className="text-xs text-charcoal/50 uppercase tracking-wider mb-1">
                   {t('contact.emailUs')}
                 </p>
-                <p className="font-semibold text-charcoal group-hover:text-rust transition-colors duration-200">
+                <p className="font-semibold text-charcoal group-hover:text-rust transition-colors duration-200 lowercase">
                   {EMAIL}
                 </p>
               </div>
@@ -176,7 +178,6 @@ export default function Contact() {
                 <p className="text-xs text-charcoal/50 uppercase tracking-wider mb-1">
                   {t('contact.area')}
                 </p>
-                <p className="font-semibold text-charcoal">Israel</p>
               </div>
             </div>
 

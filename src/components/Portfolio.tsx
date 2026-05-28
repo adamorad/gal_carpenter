@@ -2,12 +2,16 @@ import { useTranslation } from 'react-i18next'
 import { useEffect, useRef } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
+import chessTableImg from '../assets/mosko/chess-table.png'
+import chessTableWideImg from '../assets/mosko/chess-table-wide.jpg'
+import workshopImg from '../assets/mosko/workshop.png'
+
 const IMAGES = [
-  'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80',
+  chessTableImg,
+  workshopImg,
+  chessTableWideImg,
   'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1449247613801-ab06418e2861?auto=format&fit=crop&w=800&q=80',
+  'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80',
   'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80',
 ]
 

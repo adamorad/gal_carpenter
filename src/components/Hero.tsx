@@ -2,15 +2,9 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=80'
+import workshopImg from '../assets/mosko/workshop.png'
 
-const AVATAR_URLS = [
-  'https://i.pravatar.cc/40?img=1',
-  'https://i.pravatar.cc/40?img=5',
-  'https://i.pravatar.cc/40?img=12',
-  'https://i.pravatar.cc/40?img=20',
-]
+const HERO_IMAGE = workshopImg
 
 export default function Hero() {
   const { t } = useTranslation()
@@ -104,18 +98,6 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="absolute bottom-6 end-6 bg-white/95 backdrop-blur-sm px-5 py-4 shadow-lg max-w-[200px]"
         >
-          {/* Avatar stack */}
-          <div className="flex -space-x-2 mb-2">
-            {AVATAR_URLS.map((url, i) => (
-              <img
-                key={i}
-                src={url}
-                alt=""
-                className="w-8 h-8 rounded-full border-2 border-white object-cover"
-                loading="eager"
-              />
-            ))}
-          </div>
           <p className="text-[11px] text-charcoal/70 leading-snug">
             {t('hero.trust')}
           </p>
