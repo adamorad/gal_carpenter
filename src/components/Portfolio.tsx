@@ -22,7 +22,13 @@ export default function Portfolio() {
   useEffect(() => {
     const section = sectionRef.current
     if (!section) return
+    // Re-run on every tab change so newly rendered grid items get observed
     const items = section.querySelectorAll<HTMLElement>('.reveal-item')
+    items.forEach((el) => {
+      const rect = el.getBoundingClientRect()
+      // If already in viewport (e.g. tab switch while scrolled to section), show immediately
+      if (rect.top < window.innerHeight) el.classList.add('visible')
+    })
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -33,7 +39,7 @@ export default function Portfolio() {
     )
     items.forEach((el) => observer.observe(el))
     return () => observer.disconnect()
-  }, [])
+  }, [activeTab])
 
   const categories = t('portfolio.categories', { returnObjects: true }) as Category[]
   const allItems = t('portfolio.items', { returnObjects: true }) as PortfolioItem[]
