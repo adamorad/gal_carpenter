@@ -1,23 +1,23 @@
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useEffect, useRef } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
-import chessTableImg from '../assets/mosko/chess-table.png'
-import chessTableWideImg from '../assets/mosko/chess-table-wide.jpg'
-import workshopImg from '../assets/mosko/workshop.png'
+import home1Img from '../assets/mosko/home-1.png'
+import home2Img from '../assets/mosko/home-2.jpg'
+import special1Img from '../assets/mosko/special-1.jpg'
+import special2Img from '../assets/mosko/special-2.jpg'
+import montessori1Img from '../assets/mosko/montessori-1.jpg'
+import montessori2Img from '../assets/mosko/montessori-2.jpg'
 
-const IMAGES = [
-  chessTableImg,
-  workshopImg,
-  chessTableWideImg,
-  'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80',
-]
+const IMAGES = [home1Img, home2Img, special1Img, special2Img, montessori1Img, montessori2Img]
+
+type PortfolioItem = { title: string; category: string; categoryLabel: string }
+type Category = { key: string; label: string }
 
 export default function Portfolio() {
   const { t } = useTranslation()
   const sectionRef = useRef<HTMLElement>(null)
+  const [activeTab, setActiveTab] = useState('all')
 
   useEffect(() => {
     const section = sectionRef.current
@@ -35,16 +35,17 @@ export default function Portfolio() {
     return () => observer.disconnect()
   }, [])
 
-  const items = t('portfolio.items', { returnObjects: true }) as {
-    title: string
-    category: string
-  }[]
+  const categories = t('portfolio.categories', { returnObjects: true }) as Category[]
+  const allItems = t('portfolio.items', { returnObjects: true }) as PortfolioItem[]
+
+  const displayItems = (activeTab === 'all' ? allItems : allItems.filter(item => item.category === activeTab))
+    .map(item => ({ item, i: allItems.indexOf(item) }))
 
   return (
     <section id="portfolio" ref={sectionRef} className="bg-cream-dark py-24 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-14 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 reveal-item reveal">
+        <div className="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 reveal-item reveal">
           <div>
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-rust">
               {t('portfolio.badge')}
@@ -63,9 +64,26 @@ export default function Portfolio() {
           </a>
         </div>
 
+        {/* Category tabs */}
+        <div className="flex gap-2 flex-wrap mb-10 reveal-item reveal">
+          {[{ key: 'all', label: t('portfolio.all') } as Category, ...categories].map(cat => (
+            <button
+              key={cat.key}
+              onClick={() => setActiveTab(cat.key)}
+              className={`px-4 py-2 text-xs font-semibold uppercase tracking-widest border transition-colors duration-200 cursor-pointer ${
+                activeTab === cat.key
+                  ? 'bg-charcoal text-white border-charcoal'
+                  : 'border-charcoal/30 text-charcoal hover:border-charcoal'
+              }`}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
+
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {items.map((item, i) => (
+          {displayItems.map(({ item, i }) => (
             <div
               key={i}
               className="reveal-item reveal group relative overflow-hidden aspect-[4/3] cursor-pointer"
@@ -79,10 +97,9 @@ export default function Portfolio() {
                 width={800}
                 height={600}
               />
-              {/* Hover overlay */}
               <div className="absolute inset-0 bg-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <p className="text-white/60 text-xs uppercase tracking-wider mb-1">
-                  {item.category}
+                  {item.categoryLabel}
                 </p>
                 <h3 className="text-white font-heading font-semibold text-xl uppercase">
                   {item.title}
