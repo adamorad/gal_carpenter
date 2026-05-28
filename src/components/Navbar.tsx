@@ -40,7 +40,7 @@ export default function Navbar() {
           className="flex items-center gap-2.5 select-none"
           aria-label="Mosko Wood — home"
         >
-          <img src={logoIcon} alt="" className="h-9 w-9 object-contain" aria-hidden="true" />
+          <img src={logoIcon} alt="" className="h-9 w-9 object-contain dark:invert" aria-hidden="true" />
           <span className="text-charcoal font-heading font-bold text-xl tracking-widest uppercase">
             MOSKO <span className="text-wood">WOOD</span>
           </span>

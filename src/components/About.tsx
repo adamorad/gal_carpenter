@@ -52,7 +52,7 @@ export default function About() {
 
           {/* Text */}
           <div className="reveal-item reveal flex flex-col gap-6" style={{ transitionDelay: '150ms' }}>
-            <img src={logoIcon} alt="" aria-hidden="true" className="w-14 h-14 object-contain opacity-80" />
+            <img src={logoIcon} alt="" aria-hidden="true" className="w-14 h-14 object-contain opacity-80 dark:invert" />
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-rust">
               {t('about.badge')}
             </span>
