@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import logoIcon from '../assets/mosko/logo-icon.png'
 function FacebookIcon({ size = 16 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -56,8 +57,11 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <a href="#home" className="text-xl font-heading font-bold tracking-widest uppercase">
-              MOSKO <span className="text-wood-light">WOOD</span>
+            <a href="#home" className="flex items-center gap-2.5">
+              <img src={logoIcon} alt="" className="h-9 w-9 object-contain brightness-0 invert" aria-hidden="true" />
+              <span className="text-xl font-heading font-bold tracking-widest uppercase">
+                MOSKO <span className="text-wood-light">WOOD</span>
+              </span>
             </a>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               {t('footer.tagline')}
