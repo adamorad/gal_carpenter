@@ -97,7 +97,7 @@ export default function Portfolio() {
             >
               <img
                 src={IMAGES[i]}
-                alt={item.title}
+                alt={`${item.title} — Mosko Wood, custom carpentry Beer Sheva`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
                 width={800}
