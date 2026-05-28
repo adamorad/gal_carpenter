@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 
 import workshopImg from '../assets/mosko/workshop.png'
+import logoIcon from '../assets/mosko/logo-icon.png'
 
 const HERO_IMAGE = workshopImg
 
@@ -89,6 +90,17 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           width={1600}
           height={900}
+        />
+
+        {/* Brand watermark stamp */}
+        <motion.img
+          src={logoIcon}
+          alt=""
+          aria-hidden="true"
+          className="absolute top-6 start-6 w-24 md:w-32 opacity-20 brightness-0 invert pointer-events-none select-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.2 }}
+          transition={{ duration: 1, delay: 0.6 }}
         />
 
         {/* Floating trust card */}

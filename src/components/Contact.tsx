@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
+import logoIcon from '../assets/mosko/logo-icon.png'
 
 const PHONE_DOR = '972546214485'
 const EMAIL = 'MOSKOWOOD1@GMAIL.COM'
@@ -122,6 +123,7 @@ export default function Contact() {
 
           {/* Right: contact info */}
           <div className="flex flex-col gap-8 md:pt-20">
+            <img src={logoIcon} alt="" aria-hidden="true" className="w-20 h-20 object-contain opacity-70" />
             <a
               href={`https://api.whatsapp.com/send?phone=${PHONE_DOR}`}
               target="_blank"
