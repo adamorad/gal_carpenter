@@ -1,4 +1,12 @@
 import { useTranslation } from 'react-i18next'
+function FacebookIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  )
+}
+
 function InstagramIcon({ size = 16 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -9,7 +17,7 @@ function InstagramIcon({ size = 16 }: { size?: number }) {
   )
 }
 
-const PHONE = '972501234567'
+const PHONE_DOR = '972546214485'
 
 // WhatsApp SVG icon (Lucide doesn't include it)
 function WhatsAppIcon({ size = 20 }: { size?: number }) {
@@ -56,7 +64,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/_moskowood_"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -65,7 +73,16 @@ export default function Footer() {
                 <InstagramIcon size={16} />
               </a>
               <a
-                href={`https://api.whatsapp.com/send?phone=${PHONE}`}
+                href="https://www.facebook.com/MoskoWoodWorks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="p-2 border border-white/20 text-white/60 hover:text-white hover:border-white transition-colors duration-200"
+              >
+                <FacebookIcon size={16} />
+              </a>
+              <a
+                href={`https://api.whatsapp.com/send?phone=${PHONE_DOR}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -101,16 +118,22 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3 text-sm">
               <a
-                href={`tel:+${PHONE}`}
+                href="tel:+972546214485"
                 className="text-white/60 hover:text-white transition-colors duration-200"
               >
-                +{PHONE}
+                דור: 054-621-4485
               </a>
               <a
-                href="mailto:info@moskowood.co.il"
+                href="tel:+972536668863"
                 className="text-white/60 hover:text-white transition-colors duration-200"
               >
-                info@moskowood.co.il
+                גל: 053-666-8863
+              </a>
+              <a
+                href="mailto:moskowood1@gmail.com"
+                className="text-white/60 hover:text-white transition-colors duration-200"
+              >
+                moskowood1@gmail.com
               </a>
               <p className="text-white/40 text-xs mt-2">
                 {t('contact.area')}

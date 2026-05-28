@@ -2,8 +2,9 @@ import { useTranslation } from 'react-i18next'
 import { useEffect, useRef } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
-const ABOUT_IMAGE =
-  'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=80'
+import teamImg from '../assets/mosko/team.png'
+
+const ABOUT_IMAGE = teamImg
 
 export default function About() {
   const { t } = useTranslation()
@@ -39,9 +40,9 @@ export default function About() {
                 height={1125}
               />
             </div>
-            {/* Years badge */}
+            {/* Badge */}
             <div className="absolute bottom-6 end-6 bg-charcoal text-white px-6 py-5 text-center">
-              <p className="text-4xl font-heading font-bold leading-none">12+</p>
+              <p className="text-4xl font-heading font-bold leading-none">400+</p>
               <p className="text-xs text-white/60 uppercase tracking-wider mt-1">
                 {t('about.yearsLabel')}
               </p>
