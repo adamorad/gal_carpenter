@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Menu, X } from 'lucide-react'
+import logoIcon from '../assets/mosko/logo-icon.png'
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
@@ -36,10 +37,13 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#home"
-          className="text-charcoal font-heading font-bold text-xl tracking-widest uppercase select-none"
+          className="flex items-center gap-2.5 select-none"
           aria-label="Mosko Wood — home"
         >
-          MOSKO <span className="text-wood">WOOD</span>
+          <img src={logoIcon} alt="" className="h-9 w-9 object-contain" aria-hidden="true" />
+          <span className="text-charcoal font-heading font-bold text-xl tracking-widest uppercase">
+            MOSKO <span className="text-wood">WOOD</span>
+          </span>
         </a>
 
         {/* Desktop nav */}
