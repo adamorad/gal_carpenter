@@ -52,13 +52,19 @@
     "title": "PROJECTS WE'RE PROUD OF",
     "sub": "Every piece tells a story. Every project is built by hand.",
     "viewAll": "Contact Us For More Projects",
+    "all": "All",
+    "categories": [
+      { "key": "home",       "label": "House Furniture" },
+      { "key": "special",    "label": "Special Projects" },
+      { "key": "montessori", "label": "Montessori Furniture" }
+    ],
     "items": [
-      { "title": "Chess Table", "category": "Special Project" },
-      { "title": "Our Workshop", "category": "Old City, Beer Sheva" },
-      { "title": "Custom Wardrobe", "category": "Home Furniture" },
-      { "title": "Work Desk", "category": "Custom Furniture" },
-      { "title": "Montessori Furniture", "category": "Children's Furniture" },
-      { "title": "Wood & Iron Combo", "category": "Special Project" }
+      { "title": "Custom Wardrobe",  "category": "home",       "categoryLabel": "House Furniture" },
+      { "title": "Wooden Shelves",   "category": "home",       "categoryLabel": "House Furniture" },
+      { "title": "Climbing Wall",    "category": "special",    "categoryLabel": "Special Projects" },
+      { "title": "Chess Table",      "category": "special",    "categoryLabel": "Special Projects" },
+      { "title": "Children's Room",  "category": "montessori", "categoryLabel": "Montessori Furniture" },
+      { "title": "Montessori Tower", "category": "montessori", "categoryLabel": "Montessori Furniture" }
     ]
   },
   "about": {
