@@ -172,16 +172,24 @@ export default function Contact() {
               </div>
             </a>
 
-            <div className="flex items-start gap-4">
-              <div className="bg-charcoal p-3 shrink-0">
+            <a
+              href="https://maps.google.com/?q=HaAtzma'ut+10,+Beer+Sheva,+Israel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-4 group"
+            >
+              <div className="bg-charcoal p-3 shrink-0 group-hover:bg-rust transition-colors duration-200">
                 <MapPin size={20} className="text-white" />
               </div>
               <div>
                 <p className="text-xs text-charcoal/50 uppercase tracking-wider mb-1">
                   {t('contact.area')}
                 </p>
+                <p className="font-semibold text-charcoal group-hover:text-rust transition-colors duration-200 text-sm">
+                  {t('contact.serviceArea')}
+                </p>
               </div>
-            </div>
+            </a>
 
             {/* Decorative wood grain line */}
             <div className="mt-4 h-1 bg-gradient-to-r from-wood via-wood-light to-wood rounded-full opacity-40" />
