@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Get In Touch"
+  },
+  "hero": {
+    "badge": "CRAFT & DESIGN",
+    "line1": "CUSTOM WOOD",
+    "line2": "FURNITURE",
+    "sub": "Handcrafted pieces built to last a lifetime.",
+    "cta": "View Our Work",
+    "ctaSecondary": "Get In Touch",
+    "scrollHint": "SCROLL",
+    "trust": "Trusted by 100+ satisfied clients",
+    "rating": "5.0"
+  },
+  "stats": [
+    { "value": "12+", "label": "Years Experience" },
+    { "value": "250+", "label": "Projects Completed" },
+    { "value": "100+", "label": "Happy Clients" },
+    { "value": "5.0★", "label": "Average Rating" }
+  ],
+  "services": {
+    "badge": "WHAT WE DO",
+    "title": "EXPERT CRAFTSMANSHIP IN EVERY PROJECT",
+    "sub": "From custom furniture to full interior woodwork — we bring your vision to life.",
+    "items": [
+      {
+        "title": "Custom Furniture",
+        "desc": "Unique handcrafted pieces designed around your space and personal style."
+      },
+      {
+        "title": "Kitchen Cabinets",
+        "desc": "Premium cabinetry built for beauty, durability, and everyday functionality."
+      },
+      {
+        "title": "Wardrobes & Closets",
+        "desc": "Custom fitted wardrobes and elegant sliding door systems."
+      },
+      {
+        "title": "Wood Flooring",
+        "desc": "Natural wood flooring installation, sanding, and finishing."
+      }
+    ]
+  },
+  "portfolio": {
+    "badge": "OUR WORK",
+    "title": "PROJECTS WE'RE PROUD OF",
+    "sub": "A selection of recent work. Every piece tells a story.",
+    "viewAll": "View All Projects",
+    "items": [
+      { "title": "Living Room Suite", "category": "Custom Furniture" },
+      { "title": "Modern Kitchen", "category": "Kitchen Cabinets" },
+      { "title": "Master Wardrobe", "category": "Wardrobes" },
+      { "title": "Dining Table", "category": "Custom Furniture" },
+      { "title": "Oak Flooring", "category": "Wood Flooring" },
+      { "title": "Home Office", "category": "Custom Furniture" }
+    ]
+  },
+  "about": {
+    "badge": "OUR STORY",
+    "title": "CRAFTSMANSHIP YOU CAN TRUST",
+    "body1": "Mosko Wood was founded with one belief: quality woodwork should be accessible to every home. With over a decade of hands-on experience, we combine traditional joinery techniques with modern design sensibilities.",
+    "body2": "Every piece we create is built to last — and to tell a story. From the first sketch to the final finish, we're with you every step of the way.",
+    "cta": "See Our Portfolio",
+    "yearsLabel": "Years of craft"
+  },
+  "testimonials": {
+    "badge": "CLIENT REVIEWS",
+    "title": "WHAT OUR CLIENTS SAY",
+    "items": [
+      {
+        "name": "Yael Cohen",
+        "location": "Tel Aviv",
+        "text": "The kitchen cabinets Mosko Wood built for us are absolutely stunning. Perfect craftsmanship, delivered on time and within budget.",
+        "rating": 5
+      },
+      {
+        "name": "Avi Levi",
+        "location": "Ramat Gan",
+        "text": "I commissioned a custom dining table and it became the centerpiece of our home. The quality is incredible — highly recommended.",
+        "rating": 5
+      },
+      {
+        "name": "Dana Shapiro",
+        "location": "Herzliya",
+        "text": "Professional from start to finish. The wardrobe they designed fits perfectly and the attention to detail is exceptional.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "badge": "GET IN TOUCH",
+    "title": "LET'S BUILD SOMETHING TOGETHER",
+    "sub": "Have a project in mind? Tell us about it and we'll get back to you within 24 hours.",
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "message": "Tell us about your project...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "sent": "Message Sent! We'll be in touch soon.",
+    "whatsapp": "Chat on WhatsApp",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "area": "Serving the Greater Tel Aviv Area",
+    "required": "Required fields marked *"
+  },
+  "footer": {
+    "tagline": "Quality woodwork for every home.",
+    "linksTitle": "Quick Links",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved.",
+    "madeWith": "Crafted with care"
+  }
+}
